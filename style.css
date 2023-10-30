@@ -2,3 +2,48 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 3px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.message {
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: none;
+}
+
+.message.success {
+  border-color: green;
+  color: green;
+  background-color: #defcde;
+  display: block;
+}
+
+.message.error {
+  border-color: red;
+  color: red;
+  background-color: #ffbcbc;
+  display: block;
+}
